@@ -49,7 +49,7 @@ download_public_data my_folder
 download_public_data .
 ```
 It will download a public available model based on USPTO and a stock collection from ZINC database. The `config.yml` file can be directly used with both interfaces provided by the package. 
-### Command-line interface
+### Command-line Interface
 It offers capabilities for conducting tree searches on batches of molecules.
 
 It can be executed like:
