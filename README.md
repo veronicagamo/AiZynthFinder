@@ -175,17 +175,32 @@ To perform a tree search on a single compound using a GUI in a Jupyter notebook 
 1. Make sure Jupyter Notebook is installed. If not, install it using:
    ```bash
    pip install notebook
-  ```
+   ```
 2. Launch Jupyter Notebook by running the following command in your terminal:
-  ```bash
+   ```bash
    jupyter notebook
-  ```
+   ```
 3. Browse to an existing notebook or create a new one.
 4. Add these lines to the first cell in the notebook.
    ```python
    from aizynthfinder.interfaces import AiZynthApp
-   app = AiZynthApp("/path/to/configfile.yaml")
+   app = AiZynthApp("/path/to/configfile.yml")
    ```
-5. Executed the code in the cell (press Ctrl+Enter) and a simple GUI will appear.
-   
-! /Users/Usuario/Pictures/Screenshots/Captura de pantalla 2024-06-28 123109.png
+5. Executed the code in the cell (press `Ctrl+Enter`) and a simple GUI will appear.
+6. Enter the target SMILES and select stocks and policy model.
+7. Press the `Run Search` button to perform the tree search
+[GUI](https://molecularai.github.io/aizynthfinder/_images/gui_input.png)
+8. Press the `Show Routes` to see the top-ranked routes. You can also choose to select and sort the top-ranked routes based on another scoring function.
+[Routes](https://molecularai.github.io/aizynthfinder/_images/gui_results.png)
+
+The following command will automatically create a Jupyter notebook configured with `aizynthapp`, based on the settings provided in config.yml.
+```bash
+aizynthapp --config config.yml
+```
+__Specification of Output__
+
+To continue exploring the tree search results and extract output after it has been finished using `aizynthapp`, you can use the finder property of the app object. 
+```python
+finder = app.finder
+stats = finder.extract_statistics()
+```
