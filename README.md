@@ -109,7 +109,7 @@ To perform a tree search for a single molecule, you can specify it directly on t
 ```bash
 aizynthcli --config config.yml --smiles "COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1"
 ```
-Ensure to replace config.yml with the path to your configuration file and adjust the SMILES string ("COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1") to match the SMILES of your target molecule.
+Ensure to replace `config.yml` with the path to your configuration file and adjust the SMILES string ("COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1") to match the SMILES of your target molecule.
 
 __Specification of Output__
 
@@ -193,7 +193,7 @@ To perform a tree search on a single compound using a GUI in a Jupyter notebook 
 8. Press the `Show Routes` to see the top-ranked routes. You can also choose to select and sort the top-ranked routes based on another scoring function.
 [Routes](https://molecularai.github.io/aizynthfinder/_images/gui_results.png)
 
-The following command will automatically create a Jupyter notebook configured with `aizynthapp`, based on the settings provided in config.yml.
+The following command will automatically create a Jupyter notebook configured with `aizynthapp`, based on the settings provided in `config.yml.
 ```bash
 aizynthapp --config config.yml
 ```
