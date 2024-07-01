@@ -109,7 +109,7 @@ To perform a tree search for a single molecule, you can specify it directly on t
 ```bash
 aizynthcli --config config.yml --smiles "COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1"
 ```
-Ensure to replace config.yml with the path to your configuration file and adjust the SMILES string ("COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1") to match the SMILES of your target molecule."
+Ensure to replace config.yml with the path to your configuration file and adjust the SMILES string ("COc1cccc(OC(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c1") to match the SMILES of your target molecule.
 
 __Specification of Output__
 
